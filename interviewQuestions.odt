@@ -1,0 +1,74 @@
+﻿//Java Interview Questions and Answers (new version)//////////////////
+
+//Basics///////////////////////////////
+
+//Basics 1.	Why is Java so Popular?
+Java is a computer programming language that is concurrent, class based and object oriented. The advantages of OOP are: Modular development of code, Reusability, Improved reliability and flexibility and increase understanding of code.
+
+
+
+//Basics 2.	JRE, JVM and JDK
+Together, Java Development Kit (JDK), Java Virtual Machine (JVM) and Java Runtime Environment (JRE) form a the structure of Java platform components for developing and running Java apps.
+
+//JRE: A runtime environment is a piece of software that is designed to run other software, the JRE contains the Java class libraries, the Java class loader and the Java Virtual Machine.
+The class is responsible for correctly loading classes and connecting them with the core Java class libraries
+
+//JVM: JVM is a process virtual machine that can execute Java bytecode.
+Is responsible for ensuring Java applications have the resources they need to run and perform well in your device or cloud environment. 
+JVM is the Java platform component that executes programs.
+
+//JRE: Is basically the JVM where your Java programs are being executed. Mainly a container for those other components and is responsible for orchestrating their activities. JRE is te on-disk part of Java that creates the JVM.
+
+//JDK: Is a implementation of the Java platform specification, including compiler and class libraries. In other words, the JDK is a software package you download in order to create Java-based applications. Is the full featured Software Development Kit for Java (including the JRE, compilerrs and tools like JavaDoc and Java Debugger)
+
+
+
+//Basics 3.	Compare JDK, JRE and JVM
+JDK: javac, jar, debugging tools, javap
+JRE: java, javaw, libraries, rt.jar
+JVM: JIT (Just In Time Compiler)
+
+
+
+//Basics 4.	PlatformIndependence
+Also called, build once, run anywhere. Once we compiled a java program and build a jar, we can run the jar (compiled java program) in any Operative System with a JVM installed
+
+
+
+//Basics 5.	Object-Oriented Programming features
+1. Encapsulation: Group related variables and functions (operating into them) into objects.
+2. Abstraction: Separate some of the properties and methods from the outside (simpler interface, reduce impact of change).
+3. Inheritance: All the objects inherits all properties and methods from the generic object.
+4. Polymorphism: Present the same interface for differing underlying data types. Iheritance attributes and methods overwritten in the new object
+
+
+
+//Basics 6.	What does the "static" keyword mean? Can you override private or static method in Java?
+The static keyword denotes that a member variable or method can be accesed without requiring an instantiation of the class. A user cannot override static methods in Java.
+
+//CLassLoaders
+
+
+//OOPS/////////////////////////////////
+
+//Abstraction
+//Encapsulation
+//Inheritance
+//Polymorphism
+//Abstract Class
+//Interface
+//Cohesion
+//Coupling
+
+
+
+//Advanced/////////////////////////////
+
+//Collections
+//Generics
+//ExceptionHandling
+//Threads
+//JavaNewFeatures
+//Lambdas
+//Streams
+//Serialization
