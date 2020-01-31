@@ -1,13 +1,11 @@
 ﻿//Java Interview Questions and Answers (new version)//////////////////
 
-//Basics///////////////////////////////
-
-//Basics 1.	Why is Java so Popular?
+//1.	Why is Java so Popular?
 Java is a computer programming language that is concurrent, class based and object oriented. The advantages of OOP are: Modular development of code, Reusability, Improved reliability and flexibility and increase understanding of code.
 
 
 
-//Basics 2.	JRE, JVM and JDK
+//2.	JRE, JVM and JDK
 Together, Java Development Kit (JDK), Java Virtual Machine (JVM) and Java Runtime Environment (JRE) form a the structure of Java platform components for developing and running Java apps.
 
 //JRE: A runtime environment is a piece of software that is designed to run other software, the JRE contains the Java class libraries, the Java class loader and the Java Virtual Machine.
@@ -23,19 +21,19 @@ JVM is the Java platform component that executes programs.
 
 
 
-//Basics 3.	Compare JDK, JRE and JVM
+//3.	Compare JDK, JRE and JVM
 JDK: javac, jar, debugging tools, javap
 JRE: java, javaw, libraries, rt.jar
 JVM: JIT (Just In Time Compiler)
 
 
 
-//Basics 4.	PlatformIndependence
+//4.	PlatformIndependence
 Also called, build once, run anywhere. Once we compiled a java program and build a jar, we can run the jar (compiled java program) in any Operative System with a JVM installed
 
 
 
-//Basics 5.	Object-Oriented Programming features
+//5.	Object-Oriented Programming features
 1. Encapsulation: Group related variables and functions (operating into them) into objects.
 2. Abstraction: Separate some of the properties and methods from the outside (simpler interface, reduce impact of change).
 3. Inheritance: All the objects inherits all properties and methods from the generic object.
@@ -43,32 +41,199 @@ Also called, build once, run anywhere. Once we compiled a java program and build
 
 
 
-//Basics 6.	What does the "static" keyword mean? Can you override private or static method in Java?
-The static keyword denotes that a member variable or method can be accesed without requiring an instantiation of the class. A user cannot override static methods in Java.
-
-//CLassLoaders
-
-
-//OOPS/////////////////////////////////
-
-//Abstraction
-//Encapsulation
-//Inheritance
-//Polymorphism
-//Abstract Class
-//Interface
-//Cohesion
-//Coupling
+//6.	What is a class?
+Classes are a basic unit in OOP. A class is a blueprint or template for objects. Class defines variables, methods, tells what type of objects we're creating.
+All programming constructs in java reside in class. When JVM starts running it first looks for the class when we compile.
+Every Java application must have at least one class and one main method.
+Class starts with class keyword, a class definition must be saved in class file that has same as class name.
+File name must end with .java
 
 
 
-//Advanced/////////////////////////////
+//7.	What is an object?
+An object is an instance of a class. A class defines type of object, and each object belongs to some class.
+Every object contains state (attributes) and behavior (methods)
 
-//Collections
-//Generics
-//ExceptionHandling
-//Threads
-//JavaNewFeatures
-//Lambdas
-//Streams
-//Serialization
+
+
+//8.	What is a method?
+It contains the executable body that canbe applied to the specific object of the class.
+Method includes method name, parameters or arguments and return type and a body of executable code.
+Methods can have multiple arguments, separate with commas
+
+
+
+//9.	What does the "static" keyword mean? Can you override privatte or static method in Java?
+The static keyword denotes that a member variable or method can be accessed, without requiring an instantiation of the class to which it belongs. A user cannot override static methods in Java, a static method is not associated with any instance of a class.
+
+
+
+//10.	Can you access non static variable in static context?
+A static variable in Java belongs to its class and its value remains the same for all its instances. A static variable is initialized when the class is loaded by the JVM.
+
+
+
+//11.	What are the Data Types supported by Java? What is Autoboxing and Unboxing?
+Primitive types: byte, short, int, long, float, double, boolean, char
+en a new 
+Autoboxing is the automatic conversion by the Java compiler between the primitive types and their corresponding object wrapper classes. (The compiler converts and int to an Integer, a double to a Double, etc).
+
+
+
+//12.	What is Function Overriding and Overloading in Java?
+Method overloading occurs when two or more methods in the same class have the exact same name, but different parameters. A method overriding is defined as the case when a child class redefines the same method as a parent class. 
+Overridden methods must have the same name, argument list and return type.
+
+
+
+//13.	What is a Constructor, Constructor Overloading and Copy-Constructor?
+A Constructor gets invoked when a new object is created. Every class has a constructor.
+In case the programmer does not provide a constructor for a class, the Java compiler (Javac) creates a default constructor for that class. 
+
+The constructor overloading is similar to method overloading in Java. Different constructors can be created for a single class. Each constructor must have its own unique parameter list.
+
+
+
+//14.	Does Java support multiple inheritance?
+No, each class is able to extend only one class, but is able to implement more than one interfaces.
+
+
+
+//15.	What's the difference between an Interface and Abstract class?
+Java provides and support the creation both of abstract classes and interfaces. Their differences are:
+
+- All methods in an interface are implicitly abstract. An abstract class may contain both abstract and non abstract methods
+
+- A class may implement a number of Interfaces, but can extend only one abstract class
+
+- In order for a class to implement an interface, it must implement all its declared methods. However, a class may not implement all declared methods of an abstract class. Though, in this case, the sub-class must also be declared as abstract
+
+- Abstract classes can implement interfaces without even providing the implementation of interface methods
+
+- Variables declared in a Java interface is by default final. An abstract class may contain non-final variables
+
+- Members of a Java interface are public by default. A member of an abstract class can either be private, protected or public
+
+- An interface is absolutely abstract and cannot be instantiated. An abstract class also cannot be instantiated, but can be invoked if it contains a main method
+
+
+
+//16.	What are pass by reference and pass by value?
+When an object is passed by value, this means that a copy of the object is passed. If changes are made to that object, it doesn't affect the original value.
+When an object is passed by reference, the actual object is not passed, rather a reference of the object is passed.
+
+
+
+//17.	What is super keyword in java?
+Variables and methods of super class can be overriden in subclass. In case of overriding, a subclass object call its own variables and methods. Suclass cannot access the variables and methods of supercalss because the overriden variables or methods hides the methods and variables of super class.
+Super is also used to access superclass variables, methods and constructors
+
+
+
+//18.	What is JIT compiler?
+Just In Time compiler. JIT compyles byte code into executable code.
+
+
+
+//19.	What is bytecode in Java?
+When a javac compiler compiles a clas, generates .class files. This files contains sets of instructions called byte code. 
+Bytecode is a machine independent language and contains set of instructions which are to be executed only by JVM
+
+
+
+//20.	Difference between this() and super() in Java?
+this() is used to access one constructor from another with in the same class while super() is used to access superclass constructor.
+Either this() or super() exists, it must be the first statement in the constructor.
+
+
+
+//21.	Why main() method is public, static and void in java?
+
+- public: is an access specifier which can be used outside the class. When main method is declared , "public" means it can be used outside of the class
+
+- static: To call a method we require an object. Sometimes it may be required to call a method without the help of an object. Then we declare that method as static. JVM calls the main() method without creating object by declaring keyword "static"
+
+- void: Used when a method does't return any value. So because main() method does't return any value is declared as void
+
+
+
+//22.	Explain about main() method in java
+Main method is the starting point of execution for all java applications.
+	
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
+
+String args[] are array of string objects we need to pass from command line arguments.
+Every Java application must have at least one main method
+
+
+
+//23.	Difference between character constant and string constant
+Character constant: Single digits or characters enclosed in single quotes
+String contants: Collection of characters enclosed in double quotes
+
+
+
+//24.	What are constants and how to create constans in java?
+Constants are fixed values whose values cannot be changed during the execution of program. We create constans in java using final keyword.
+	final int number = 10;
+	final String str = "Java interview questions";
+
+
+
+//25.	What is an exception in java?
+A Java exception is an object. Exceptions are created when an abnormal situation is appears in our program.
+Exception can be created by JVM or by our application code.
+All exception classes are defined in java.lang. We can call Exception as a run time error
+
+
+
+//26.	What situations can generate exceptions in java?
+
+- Accesing an element that doesn't exist in the array
+- Invalid conversion of number to string and string to number (Number Format Exception)
+- Invalid casting of class (Class Cast Exception)
+- Tying to create an object for interface or abstract class (Instatiation Exeption)
+
+
+
+//27.	What is Exception handling in java?
+Exception handling is a mechanism to do when some not normal situation appears.
+When an exception is reaised in program, it leads to the termination of the program when it's not handled properly.
+An Exception Handling can make the program to continue normally
+
+
+
+//28.	Five keywords related to Exception hanlding
+Try, Catch, throw, throws, finally
+
+
+
+//29.	Explain try and catch keywords in java
+In try block, we define all exception causing code. In java try and catch forms a unit.
+A catch block catches the exeception thrown by preceding try block.
+Catch block cannot catch an exception thrown by another block.
+
+If there;s no exception in our code, JVM will ignore the try-catch block
+
+
+
+//30.	What is a process?
+A process is a program in execution.
+Every procecss have their own memory space. Process are heavy and require their own address space. One or more threads make a process
+
+
+
+//31.	What is thread in java?
+Thread is a separate path of execution in a program. Thread are:
+
+- Lightweight
+- Share the same address space
+- Creating threads is simple when compared to a process because require less resources
+- Threads exists in process. A process has at least one thread
+
+
+
+//32.	What is multitasking?
+Multitasking means performing more than one activity at a time
