@@ -1,0 +1,20 @@
+We want to implement different functionalities of an Academic Centre.
+There will be different students and subjects, they'll have to register on a simple menu.
+For students, record number and name. For subjects code, number and credits (Subjects will have students and a student can have multiple subjects)
+We'll need to register qualifications from students for every subject.
+
+On AcademicCentre.java
+
+boolean createStudent(String record, String name)
+
+boolean createSubject(String code, String number, String credits)
+
+boolean register(String record, String code)
+
+void printStudent(String record)
+
+void printStudents()
+
+boolean addQualification(String record, String code, String qualification)
+
+void comparateStudent (String record1, String record2)
