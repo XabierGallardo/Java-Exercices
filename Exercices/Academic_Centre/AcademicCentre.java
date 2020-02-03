@@ -30,8 +30,7 @@ public class AcademicCentre {
 			return false;
 		}
 	}
-
-
+	
 	//Register student method
 	public boolean register (String record, String code) {
 		if(studentList.containsKey(record) && subjectList.containsKey(code)) {
@@ -41,7 +40,6 @@ public class AcademicCentre {
 		}
 		return false;
 	}
-
 	
 	//Print student method
 	public void printStudent (String record) {
@@ -65,20 +63,20 @@ public class AcademicCentre {
 		if (studentList.isEmpty()) {
 			System.out.println("Empty list");
 		} else {
-		for (Student student : studentList.values()) {
-			System.out.println(student);
-			
-			for (Register registerStudent : registerList.values()) {
+			for (Student student : studentList.values()) {
+				System.out.println(student);
+				
+				for (Register registerStudent : registerList.values()) {
 					
-				//Check if the student is already registered
-				if (registerStudent.getRecord().contentEquals(student.getRecord())) {
-					System.out.println("Code: " + registerStudent.getCode() + ", qualification: " + registerStudent.getQualification());
+					//Check if the student is already registered
+					if (registerStudent.getRecord().contentEquals(student.getRecord())) {
+						System.out.println("Code: " + registerStudent.getCode() + ", qualification: " + registerStudent.getQualification());
 					}
 				}
 			}
+		}
 	}
-}
-
+	
 	//Add qualification method
 	public boolean addQualification (String record, String code, double qualification) {
 		Register registerQualification = registerList.get(record + "-" + code);
@@ -130,3 +128,4 @@ public class AcademicCentre {
 	}
 }
 }
+

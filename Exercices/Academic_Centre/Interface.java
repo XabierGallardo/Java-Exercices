@@ -52,7 +52,7 @@ public class Interface {
 				String credits = keyboard.next();
 				
 				boolean createSubject = academicCentre.createSubject(code, nameSubject, credits);
-				if (createStudent ) {
+				if (createSubject ) {
 					System.out.println("Subject created");
 				} else {
 					System.out.println("Couldn't create subject");
@@ -76,7 +76,7 @@ public class Interface {
 			case 4:
 				System.out.println("Insert student record: ");
 				String recordStudent = keyboard.next();
-				academicCenter.printStudent(recordStudent);
+				academicCentre.printStudent(recordStudent);
 				break;
 				
 			case 5:
@@ -91,7 +91,7 @@ public class Interface {
 				System.out.println("Insert qualification: ");
 				String qualification = keyboard.next();
 				
-				academicCentre.addQualification(recordQualification, codeQualification, qualification);
+				academicCentre.addQualification(recordQualification, codeQualification,Double.parseDouble(qualification));
 				break;
 			
 			case 7:
@@ -100,7 +100,7 @@ public class Interface {
 				System.out.println("Insert student 2 record: ");
 				String recordStudent2 = keyboard.next();
 				
-				academicCentre.compareStudents(recordStudent1, recordStudent2);
+				academicCentre.studentComparison(recordStudent1, recordStudent2);
 				break;
 				
 			case 8:
