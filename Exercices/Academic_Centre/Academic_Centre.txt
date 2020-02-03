@@ -5,16 +5,23 @@ We'll need to register qualifications from students for every subject.
 
 On AcademicCentre.java
 
-boolean createStudent(String record, String name)
+#boolean createStudent(String record, String name)
+Create and add student. Cannot exists two students with same record, will return false if student couldn't be registered and true if it does
 
-boolean createSubject(String code, String number, String credits)
+#boolean createSubject(String code, String number, String credits)
+Create and add subject. Cannot exits two subjects with same code, will return false if subject couldn't be registered and true if it does
 
-boolean register(String record, String code)
+#boolean register(String record, String code)
+Will register student onto subject's code, will return false if student cannot be found and/or if it was already assigned to it
 
-void printStudent(String record)
+#void printStudent(String record)
+Will print on scren information of student
 
-void printStudents()
+#void printStudents()
+Will print all registered students on the center
 
-boolean addQualification(String record, String code, String qualification)
+#boolean addQualification(String record, String code, String qualification)
+Assign a qualification to an student as it appears on subject's code, will return false if the student is not registered on that subject
 
-void comparateStudent (String record1, String record2)
+#void comparateStudent (String record1, String record2)
+Will print which student has bigger qualifications
